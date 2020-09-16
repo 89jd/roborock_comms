@@ -10,7 +10,7 @@ mosquitto_sub -v -h m1.tuyaeu.com -u p******* -P ************ -t m/m/i/<roborock
 
 It is possible to subscribe, and by sending the get_map_v1 request (see first link) locally, it will make the mqtt spit out the encrypted map. It needs to be request with a new JSON object though: -
 
-"security":{"endpoint":"****","nonce":"<AES generated key>"}
+"security":{"endpoint":"****","nonce":"\<AES generated key\>"}
 
 It is possible to retrieve the “endpoint” from SharedPreferences.
 
